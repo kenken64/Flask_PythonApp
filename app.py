@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, url_for, flash, redirect
 import sqlite3
 from werkzeug.exceptions import abort
 
+
 def get_db_connection():
     conn = sqlite3.connect('database.db')
     conn.row_factory = sqlite3.Row
@@ -85,3 +86,4 @@ def delete(id):
     conn.close()
     flash('"{}" was successfully deleted!'.format(post['title']))
     return redirect(url_for('index'))
+
