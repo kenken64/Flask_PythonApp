@@ -51,3 +51,17 @@ flask run -p 5001
 ```
 export FLASK_APP=app
 ```
+
+## App url 
+https://protected-cove-84979.herokuapp.com/ 
+
+## Git url
+https://git.heroku.com/protected-cove-84979.git
+
+## Deployment
+
+```
+echo "web: gunicorn app:app" > Procfile
+python3 -m pip install Flask==1.1.2
+python3 -m pip freeze > requirements.txt
+```
