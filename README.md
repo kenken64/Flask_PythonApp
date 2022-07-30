@@ -64,4 +64,7 @@ https://git.heroku.com/protected-cove-84979.git
 echo "web: gunicorn app:app" > Procfile
 python3 -m pip install Flask==1.1.2
 python3 -m pip freeze > requirements.txt
+
+python3 -m pip install gunicorn==20.0.4
+python3 -m pip freeze > requirements.txt
 ```
