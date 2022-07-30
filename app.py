@@ -8,6 +8,7 @@ def get_db_connection():
     return conn
 
 app  = Flask(__name__)
+
 app.config['SECRET_KEY'] = '123jsfhdskjfh'
 
 @app.route('/')
